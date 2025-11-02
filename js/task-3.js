@@ -11,9 +11,13 @@
       return `${profile.username} has ${this.playTime} active hours!`; //можна this, можна напряму
     },
 
-    changeUsername(newName) {},
+    changeUsername(newName) {
+      this.username = newName; //немає масиву обєктів, лише берем одну властивість
+    },
 
-    updatePlayTime(hours) {},
+    updatePlayTime(hours) {
+      this.playTime = hours; //те саме.. замінюємо значення властивості
+    },
   };
 
   console.log(profile.getInfo()); // "Jacob has 300 active hours!"

@@ -16,7 +16,7 @@
     },
 
     updatePlayTime(hours) {
-      this.playTime = hours; //те саме.. замінюємо значення властивості
+      this.playTime += hours; //те саме.. замінюємо значення властивості
     },
   };
 
